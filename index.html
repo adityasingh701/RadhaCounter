@@ -179,7 +179,29 @@ function run(){
     s.play();
 }
 </script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC2HZKs_oD7XpnkmGCJbDDKLUHkwCY3AIs",
+    authDomain: "radha-counter-ss.firebaseapp.com",
+    projectId: "radha-counter-ss",
+    storageBucket: "radha-counter-ss.firebasestorage.app",
+    messagingSenderId: "709477581053",
+    appId: "1:709477581053:web:b0d475e30319a4afc0be94",
+    measurementId: "G-6TF0HSPXE5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
 
